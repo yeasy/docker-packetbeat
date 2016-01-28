@@ -40,11 +40,17 @@ Install packetbeat 1.0.1-x86_64 versin.
 ## add default conf file
 Add the packetbeat.yml to /etc/packetbeat/.
 
+## download geo data
+Download [geodata](http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz) and put as `/usr/share/GeoIP/GeoLiteCity.dat`.
+
 # Supported Docker versions
 
 This image is officially supported on Docker version 1.7.0.
 
 Support for older versions (down to 1.0) is provided on a best-effort basis.
+
+# Known Issues
+* N/A.
 
 # User Feedback
 ## Documentation
