@@ -1,6 +1,6 @@
 Docker-Packetbeat
 ===
-Docker images for the packetbeat.
+Docker images for the [packetbeat](https://www.elastic.co/guide/en/beats/packetbeat) tool.
 
 
 # Supported tags and respective Dockerfile links
