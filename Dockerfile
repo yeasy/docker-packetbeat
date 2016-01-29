@@ -16,10 +16,8 @@ RUN curl -L -O https://download.elastic.co/beats/packetbeat/${FILENAME}\
 
 RUN mkdir -p /usr/share/GeoIP \
  && cd /usr/share/GeoIP/ \
- && curl -S -L -O http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz
-
-RUN cd /usr/share/GeoIP/ && gzip -d GeoLiteCity.dat.gz
-RUN cd /usr/share/GeoIP/ && rm -f GeoLiteCity.dat.gz
+ && curl -S -L http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz | gzip -d \
+ && rm -f GeoLiteCity.dat.gz
 
 ADD packetbeat.yml /etc/packetbeat/packetbeat.yml
 
